@@ -17,3 +17,19 @@ var multiply = function multiply() {
 
 multiply(2, 2);
 multiply(5);
+
+function average() {
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  var len = args.length;
+  return args.reduce(function (prev, curr) {
+    var sum = prev + curr;
+    return sum;
+  }) / len;
+}
+
+console.log(average(1));
+console.log(average(1, 3));
+console.log(average(1, 3, 6, 6));
