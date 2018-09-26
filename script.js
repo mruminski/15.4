@@ -6,3 +6,8 @@ function say() {
 }
 
 say();
+
+const multiply = (x = 1 ,y = 1) => { console.log(x * y) };
+
+multiply(2,2);
+multiply(5);
