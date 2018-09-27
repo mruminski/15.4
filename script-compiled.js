@@ -36,3 +36,12 @@ console.log(average(1, 3, 6, 6));
 
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 console.log(average.apply(undefined, grades));
+
+var arr = [1, 4, 'Iwona', false, 'Nowak'];
+var third = arr[2],
+    fifth = arr[4];
+
+var firstname = third;
+var lastname = fifth;
+console.log(firstname);
+console.log(lastname);
