@@ -7,17 +7,13 @@ function say() {
 
 say();
 
-const multiply = (x = 1 ,y = 1) => { console.log(x * y) };
+const multiply = (x = 1, y = 1) => { console.log(x * y) };
 
 multiply(2,2);
 multiply(5);
 
 function average(...args) {
-  const len = args.length;
-  return args.reduce((prev, curr) => {
-    let sum = prev + curr;
-    return sum;
-  }) / len;
+  return args.reduce((prev, curr) => (prev + curr))/args.length;
 }
 
 console.log(average(1));
