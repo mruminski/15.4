@@ -29,3 +29,22 @@ const firstname = third;
 const lastname = fifth;
 console.log(firstname);
 console.log(lastname);
+
+const childrenArr = [
+  { name: 'Mateusz', amount: 5 },
+  { name: 'Tomek', amount: 10 },
+  { name: 'Alicja', amount: 15 },
+  { name: 'Krzysztofa', amount: 20 },
+  { name: 'Madzia', amount: 25 },
+  { name: 'Zbyszek', amount: 30 }
+];
+
+const initBottleTops = 27;
+
+function sumOfTops() {
+  return childrenArr.reduce(function(prev, curr) {
+    return prev + curr.amount;
+  }, initBottleTops);
+};
+
+console.log(sumOfTops());
