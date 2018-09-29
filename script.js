@@ -40,11 +40,6 @@ const childrenArr = [
 ];
 
 const initBottleTops = 27;
+const sumOfTops = childrenArr.reduce((prev,curr) => prev + curr.amount, initBottleTops);
 
-function sumOfTops() {
-  return childrenArr.reduce(function(prev, curr) {
-    return prev + curr.amount;
-  }, initBottleTops);
-};
-
-console.log(sumOfTops());
+console.log(sumOfTops);
